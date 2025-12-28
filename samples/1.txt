@@ -1,0 +1,7 @@
+Question) Write about the basic components of a computer.
+
+1) 11th gen intel core i7 processor 
+2) windows 11 pro
+3) Intel iris graphics
+4) 1 Tb SSD
+5) 16 GB DDR-4 3400 Mhz Ram
