@@ -1,6 +1,6 @@
 # Write a menu driven program in Python to check whether the number is Armstrong, check whether the number is prime and check whether the number is palindrome
 # Check for armstrong number
-n= int(input("Enter a number: "))
+n= eval(input("Enter a number: "))
 l=n
 sum=0 
 z= len(str(n))

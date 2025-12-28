@@ -16,7 +16,7 @@
 #     print("")
 
 # (3)1 22 333 4444 pattern
-x= int(input("Enter a number: "))
+x= eval(input("Enter a number: "))
 
 for i in range(1,x+1):
     for j in range(1, i+1):

@@ -1,5 +1,5 @@
 # Write a program in Python to print the Fibonacci series up to specified terms.
-n= int(input("Enter a number: "))
+n= eval(input("Enter a number: "))
 
 n1=0
 n2=1

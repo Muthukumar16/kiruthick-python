@@ -1,6 +1,6 @@
 # Write a program in Python to find minimum of three numbers.
-a= int(input("Enter a number: "))
-b= int(input("Enter a number: "))
+a= eval(input("Enter a number: "))
+b= eval(input("Enter a number: "))
 c= int(input("Enter a number: "))
 
 smallest =0
