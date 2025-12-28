@@ -1,50 +1,79 @@
-## Fundamentals
+# Fundamentals
 
-- Data Types
-- Variables
-- Operators & Expressions
+## Ethical Issues
 
-#### Build-in core data types:
+- Intellectual Property Rights (IPR)
+- Plagiarism
+- Digital Property Rights
 
-| S.No | Data Types  | Details                                                                 |
-|------|-------------|-------------------------------------------------------------------------|
-| 1    | Numbers     | Integers (signed, Boolean), Float, Complex Numbers                      |
-| 2    | String      | Hold any types e.g., letters, numbers, and special characters           |
-| 3    | List        | Compound data type – Mutable: `[1, 2, 3]`                               |
-| 4    | Tuple       | Compound data type – Immutable: `(1, 2, 3)`                             |
-| 5    | Set         | Does not allow duplicates: `{1, 2, 3}`                                  |
-| 6    | Dictionary  | Key & Value pairs: `{'a': 1, 'b': 2, 'c': 3}`                           |
+## Intellectual Property Rights (IPR):
 
-```mermaid
-graph TD
-    A[Python Core Data Types] --> B[Numeric]
-    A --> C[Sequence]
-    A --> D[Set]
-    A --> E[Mappings]
+| S.No | IPR        | Details                                                                             |
+|------|------------|-------------------------------------------------------------------------------------|
+| 1    | Copyright  | Right of the creator of the original creative work Ex: song, movie, software rights |
+| 2    | Patents    | Right given to the inventor for their inventions, Ex: new manufacturing machines    |
+| 3    | Trademark  | Registered Logo, shape, colors Ex: Google, Apple                                    |
 
-    B --> B1[integer]
-    B1 --> F[Boolean]
-    B --> B2[float]
-    B --> B3[complex]
+#### Violation of IPR:
 
-    C --> C1[string]
-    C --> C2[list]
-    C --> C3[tuple]
+Three forms of IPR
+1. [x] Plagiarism
+2. [x] Copyright infringement
+3. [x] Trademark infringement
 
-    E --> E1[dict]
-```
-#### Operators:
+#### Plagiarism:
+Its stealing someone else's intellectual work and represent it as your own work without giving credit to creator
+
+#### Copyright infringement
+
+#### Trademark infringement
+
+#### Digital Property Rights 
+- Threats to Digital property
+- Digital Property Rights protection
+--- Anti-Temper Solutions, Legal Clauses, Limit the sharing of software code.
+
+## Open Source Philosophy and Software Licenses
+
+#### Free Software
+
+#### Open source Software
+
+## Technology and Society
+
+#### Economic Benefits:
+- Secure Transactions
+- Ease and Availability
+- Net Banking
+- Global Market
+
+## E-Waste Management
+
+#### E-Waste Disposal Process
+
+#### Benefits of e-Waste Recycling
+
+## Gender Issues with Teaching/Using Computer
+
+#### Under Representation
+Ex: 17% girls represented in `Computer Science`
+- Preconceived Notions.
+- Lack of Interest
+- Lack of motivations
+- Lack of Role models
+- Lack of Encouragement in class
 
 
-| S.No | Operators  | Details                                                      |
-|------|------------|--------------------------------------------------------------|
-| 1    | Arithmetic | `+` `*` `// floor division` `** exponentioation` `-` `/` `%` |
-| 2    | Unarry     | `+` `-` precedes an operand                                  |
-| 3    | Binary     | Operator with two operand                                    |
-| 4    | Augmented  | `+=` `-=`                                                    |
-| 5    | Relational | `<` `>` `<=` `>=` `==` `!=`                                  |
-| 6    | Identity   | `is` `is not` `in` `not in` `id() - returns memory address`  |
-| 7    | Equality   | `==`                                                         |
-| 8    | Logical    | `or` `and` `not`                                             |
-| 9    | Chained    | `1<2<3 - Chained comparison operators`                       |
-| 10   | Bitwise    | `&` `!` ` ^` `~`                                             |
+#### Possible solutions
+
+- 
+
+## Disability Issues while Teaching and using Computers
+
+#### Unavailability of Teaching materials
+
+#### Lack of Special Needs Teachers
+
+#### Lack of Supporting Curriculum
+
+#### Possible Solutions:
