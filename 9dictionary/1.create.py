@@ -1,6 +1,6 @@
-### Syntex
+### Syntax
 
-### <9dictionary-name> = {<key>: <value>, <key>: <value>, ...}
+### <dictionary-name> = {<key>: <value>, <key>: <value>, ...}
 
 ### Example
 teachers = {"Role#":21, "Name":"Kiryu", "Subject": "Maths"}

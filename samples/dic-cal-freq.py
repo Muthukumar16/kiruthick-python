@@ -1,4 +1,4 @@
-# write a python program to get the frequency of every charectar of a string entered by a user uing 9dictionary!
+# write a python program to get the frequency of every character of a string entered by a user using dictionary!
 
 x= input("Enter a string: ")
 d={}

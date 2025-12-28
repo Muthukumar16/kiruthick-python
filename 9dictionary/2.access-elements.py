@@ -1,6 +1,6 @@
 ### Accessing Elements
 
-# Syntax <9dictionary-name> [<key>]
+# Syntax <dictionary-name> [<key>]
 # Ex:
 teachers = {"ComputerScience": "Sri Vidya"}
 print(teachers["ComputerScience"])
