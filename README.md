@@ -1,4 +1,4 @@
-# Class XI A  
+# Class XI 
 ## List of Practicals  
 
 1. Write about the basic components of a computer.  
