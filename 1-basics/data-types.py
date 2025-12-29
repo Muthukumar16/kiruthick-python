@@ -5,7 +5,7 @@ b=2.0                 #float
 c=5+4j                #complex
 d= "Hello world"      #string
 e= [1,2,3,4,5]        #list
-f={a: 'A'}            #9dictionary
+f={a: 'A'}            #9-dictionary
 g= (1,2,3,4,5)        #tuple
 
 print(type(a))
