@@ -42,5 +42,5 @@ Ex: Ref: [Add Elements](4.add-elements.py)
 | 3    | popitem()          | Remove and return last inserted element <br/> `<dict>.popitem(key, <value>)`                 |
 | 4    | clear()            | Remove all items from Dictionary <br/>`<dict>.clear()`                                       |
 
-
+Ex: Ref: [Delete items](6.delete.py)
 
