@@ -1,4 +1,6 @@
-## Fundamentals:
+## Fundamentals - Dictionary:
+
+![Visual](basic.png)
 
 - Create Dictionaries `<dictionary>[<key>:<value>, <key>:<value>...]`
 - Access Elements: Ref: [Access Elements](2.access-elements.py)
@@ -14,6 +16,20 @@
 | 4    | Keys are unique    | Key can't be duplicate, Values can be duplicated        |
 | 5    | Values are Mutable | Modify values `<dictionary>[<key>] = <value>`           |
 | 6    | Stored as mappings | Stored internally using `Hash`, linking called Mappings |
+
+### 🔄 CRUD operations:
+
+![CRUD](crud.png)
+
+Create: Adds a new key-value pair.
+
+Read: Highlights access to a specific key.
+
+Update: Replaces a value and shows the new memory address.
+
+Delete: Removes a key-value pair.
+
+Copy: Shows a shallow copy with identical memory references.
 
 #### Adding Elements to Dictionaries:
 - Add new elements (key:value) using assignment as per syntax.
