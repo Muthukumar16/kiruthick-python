@@ -1,4 +1,4 @@
-## Fundamentals - Dictionary:
+## Fundamentals:
 
 ![Visual](basic.png)
 
@@ -21,15 +21,22 @@
 
 ![CRUD](crud.png)
 
-Create: Adds a new key-value pair.
+<b>Create:</b> Create a new key-value pairs.<br/>
+`1. basic_dict = {'key1': 'value1', 'key2': 'value2'}`<br/>
+`2. equal_dict = dict(key1='value1', key2='value2')`<br/>
+`3. list_dict = dict([('key1', 'value1'), ('key2', 'value2')])`<br/>
+`4. zip_dict = dict(zip(['key1','key2'], ['value1','value2']))`<br/>
+`5. tuples_dict = dict((('key1', 'value1'), ('key2', 'value2')))`<br/>
 
-Read: Highlights access to a specific key.
+<b>Add:</b> Adds a new key-value pair.<br/>
 
-Update: Replaces a value and shows the new memory address.
+<b>Read:</b> Highlights access to a specific key.
 
-Delete: Removes a key-value pair.
+<b>Update:</b> Replaces a value and shows the new memory address.
 
-Copy: Shows a shallow copy with identical memory references.
+<b>Delete:</b> Removes a key-value pair and removes all items.
+
+<b>Copy:</b> Shows a shallow copy with identical memory references.
 
 #### Adding Elements to Dictionaries:
 - Add new elements (key:value) using assignment as per syntax.
