@@ -6,16 +6,16 @@ A small collection of Python examples and exercises organized by concept and pac
 
 This index lists the learning packages and example files in this repository. Each package focuses on a core Python concept and contains small example scripts, exercises, and an explanatory README.
 
-1. [1-basics](1-basics/README.md) — Basics: Core fundamentals — variables, data types, control flow (if/else), loops (for/while), functions, basic I/O.
-2. [2-boolean-gates](2-boolean-gates/README.md) — Boolean Gates: Boolean logic, truth tables, and logical operators.
-3. [3-data-handling](3-data-handling/README.md) — Data Handling: File I/O, CSV parsing, basic data transformations and common utilities.
-4. [4-modules](4-modules/README.md) — Modules: Creating and using modules and packages, standard library highlights.
-5. [5-flow-controls](5-flow-controls/README.md) — Flow Controls: Conditional statements, loops, and exception handling patterns.
-6. [6-string-manipulation](6-string-manipulation/README.md) — String Manipulation: String methods, formatting, slicing, and parsing patterns.
-7. [7-list](7-list/README.md) — Lists: Building and manipulating lists, comprehensions, nested lists, and common algorithms.
-8. [8-tuples](8-tuples/README.md) — Tuples: Immutable sequences, packing/unpacking, and tuple use-cases.
-9. [9-dictionary](9-dictionary/README.md) — Dictionaries: Mapping types, creation patterns, dictionary methods, and nested structures.
-10. [10-ethics](10-ethics/README.md) — Ethics & Fundamentals: Intellectual property, plagiarism, open source philosophy, and societal impacts.
+1. [basics](1-basics/README.md) — Basics: Core fundamentals — variables, data types, control flow (if/else), loops (for/while), functions, basic I/O.
+2. [boolean-gates](2-boolean-gates/README.md) — Boolean Gates: Boolean logic, truth tables, and logical operators.
+3. [data-handling](3-data-handling/README.md) — Data Handling: File I/O, CSV parsing, basic data transformations and common utilities.
+4. [modules](4-modules/README.md) — Modules: Creating and using modules and packages, standard library highlights.
+5. [flow-controls](5-flow-controls/README.md) — Flow Controls: Conditional statements, loops, and exception handling patterns.
+6. [string-manipulation](6-string-manipulation/README.md) — String Manipulation: String methods, formatting, slicing, and parsing patterns.
+7. [list](7-list/README.md) — Lists: Building and manipulating lists, comprehensions, nested lists, and common algorithms.
+8. [tuples](8-tuples/README.md) — Tuples: Immutable sequences, packing/unpacking, and tuple use-cases.
+9. [dictionary](9-dictionary/README.md) — Dictionaries: Mapping types, creation patterns, dictionary methods, and nested structures.
+10. [ethics](10-ethics/README.md) — Ethics & Fundamentals: Intellectual property, plagiarism, open source philosophy, and societal impacts.
 
 ## Concept flow
 
