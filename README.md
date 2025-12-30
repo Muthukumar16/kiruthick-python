@@ -6,19 +6,19 @@ A small collection of Python examples and exercises organized by concept and pac
 
 This index lists the learning packages and example files in this repository. Each package focuses on a core Python concept and contains small example scripts, exercises, and an explanatory README.
 
-- python_basic/
+- [python_basic](strings/README.md)/
   - Description: Core fundamentals — variables, data types, control flow (if/else), loops (for/while), functions, basic I/O.
   - Example files: hello.py, control_flow.py, functions_example.py
-- strings/
+- [strings](strings/README.md)/
   - Description: String creation, formatting, methods, slicing, encoding, and common patterns (parsing, templating).
   - Example files: formatting.py, slicing_and_indexing.py, parse_key_values.py
-- lists/
+- [lists](lists/README.md)/
   - Description: Building and manipulating lists, comprehensions, nested lists, common algorithms, mutability.
   - Example files: comprehension_examples.py, list_methods.py, flatten_nested.py
-- tuples/
+- [tuples](tuples/README.md)/
   - Description: Immutable sequences, packing/unpacking, when to use tuples vs lists, using tuples as dict keys.
   - Example files: pack_unpack.py, tuple_use_cases.py
-- dictionaries/
+- [dictionaries](dictionaries/README.md)/
   - Description: Mapping types, creation patterns, dictionary methods, nested structures, iteration, common use-cases.
   - Example files: dict_methods.py, invert_dict.py, merge_dicts.py
 
@@ -46,7 +46,7 @@ sequenceDiagram
 
     Learner->>Basic: Start with fundamentals (variables, types, control flow)
     Basic->>String: Learn string creation and manipulation
-    String->>List: Convert and split strings into lists; learn indexing
+    String->>List: Convert and split strings into lists; 
     List->>Tuple: Understand immutability and when to use tuples
     Tuple->>Dict: Use tuples as keys and migrate to mappings (dicts)
     List->>Dict: Build dictionaries from list of pairs
