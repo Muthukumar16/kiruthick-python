@@ -1,27 +1,49 @@
-# Class XI 
-## List of Practicals  
+# kiruthick-python
 
-1. Write about the basic components of a computer.  
-2. Write a Python program to show all possible data types available in Python.  
-3. Write a Python program to take 3 numbers from the user and display the product of those numbers.  
-4. Write a Python program to take the radius of a circle and print perimeter and area of the circle.  
-5. Write a Python program to take length and breadth of a rectangle and print area and perimeter.  
-6. Write a Python program that inputs a student's marks in five subjects (out of 100) and prints the percentage.  
-7. Write a program in Python to convert a given temperature from Celsius to Fahrenheit.  
-8. Write a program in Python to find the minimum of three numbers.  
-9. Write a Python program to print the table of a number in tabular format given by the user as input.  
-10. Write a program to print factorial of a number using both while and for loop.  
-11. Write a program to print sum of even and odd integers of first *n* natural numbers.  
-12. Write a menu-driven program in Python to print the grade of a student based on the marks.  
+A small collection of Python examples and exercises organized by concept and package. This repository groups learning material and code for Python basics, string operations, lists, tuples and dictionaries.
 
-### Marks Range and Grade
-| Marks Range | Grade |
-|-------------|-------|
-| 100–91      | A+    |
-| 90–81       | A     |
-| 75–80       | B     |
-| 61–74       | C     |
-| 51–60       | D     |
-| 1–50        | E     |
+See the full package index in [index.md](index.md).
 
-13. Write a menu-driven program in Python to print the given patterns (star, letters, number).  
+## Quick links
+
+- Index: [index.md](index.md)
+- Packages:
+  - python_basic/ - basic Python concepts and examples
+  - strings/ - string operations and examples
+  - lists/ - list operations and examples
+  - tuples/ - tuple usage examples
+  - dictionaries/ - dictionary examples and patterns
+
+## Concept flow
+
+Below is a mermaid sequence diagram that represents how a learner might progress through the core concepts in this repository (Python Basic -> String -> List -> Tuple -> Dictionary).
+
+```mermaid
+sequenceDiagram
+    participant Learner as Learner
+    participant Basic as Python Basic
+    participant String as String
+    participant List as List
+    participant Tuple as Tuple
+    participant Dict as Dictionary
+
+    Learner->>Basic: Start with fundamentals (variables, types, control flow)
+    Basic->>String: Learn string creation and manipulation
+    String->>List: Convert and split strings into lists; learn indexing
+    List->>Tuple: Understand immutability and when to use tuples
+    Tuple->>Dict: Use tuples as keys and migrate to mappings (dicts)
+    List->>Dict: Build dictionaries from list of pairs
+    String->>Dict: Parse key:value strings into dictionaries
+
+    note over Learner,Dict: Iterate, practice exercises, and refer to package readmes
+```
+
+## How to use
+
+1. Open the `index.md` to see the list of packages and example files.
+2. Browse the package folders and run example scripts locally using Python 3.x.
+3. Each package contains a README with focused explanations and sample code.
+
+## Contributing
+
+Contributions welcome — open issues and PRs to add examples, fixes or explanations.
