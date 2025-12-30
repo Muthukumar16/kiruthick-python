@@ -61,7 +61,6 @@
 | 3    | popitem()        | Remove and return last inserted element <b>LIFO (Last In First Out)</b> <br/> If dictionary empty, it will raise <b>KeyError <br/> `Syntax: <dict>.popitem(key, <value>)` |
 | 4    | clear()          | Remove all items from Dictionary <br/>`Syntax: <dict>.clear()`                                                                                                            |
 
-
  Examples: [Delete items](6.delete.py)
 
 #### Checking for Existence of a key `Syntax: <key> in <dict>` and `<key> not in <dict>` 
@@ -79,6 +78,7 @@
 - Read an element from the List using loop (`for loop`)
 - Check if this element exists (condition) as akey in the dictionary (`if`)
 - If not then add to dictionary in the form `<Key>`- Word :`<Value>`- Counts
+<br/>Examples: [Count frequency of the Words](8.count-freq-elements.py)
 
 #### Functions `Syntax: len(<dict>)` and Methods `<dict>.get()` , `<dict>.items()` , `<dict>.values()`
 ###### FUNCTIONS:
@@ -88,6 +88,7 @@
 - `<dict>.items()` - Method returns all the items as <b>TUPLES</b> (sequence of key, value)
 - `<dict>.keys()` - Method returns all the Keys in the form of <b>LIST</b>.
 - `<dict>.values()` - Method returns all the Values as <b>LIST</b>, returned in on particular order.
+<br/>Examples: [functions & Methods](9.functions-mtds.py)
 
 #### Creating Dictionary from keys `Syntax: <dict>.fromkeys(<key seq>, [<value>])`
 - Method is used to create a new dictionary from keys and common values which will be assigned to all the keys.
@@ -96,14 +97,19 @@
 #### Extend/Update Dictionary with `Syntax: <dict>.setdefault(<key>, <value>)`  and `<dict>.update(<other dict>)`
 - `<dict>.setdefault()` - To insert a new key:value pair and Returns the value, if added; otherwise returns value of the existing key.
 - `<dict>.update()` - This method merges key:value pairs (existing key) or Add (new key), The items in the new dict are added to the old one and override any items already there with the same keys.
+<br/> Examples: [Update New & Merge](7.update.py)
 
 #### Making Shallow copy `Syntax: <dict>.copy()`
-
+- `copy()` method creates a shallow copy (only reference copied or values referred multiple variables)
+- Deep copy - entire object (dict) copied and created new object (dict)
+<br/> Examples: [copy method and assignment op](10.copy.py)
 
 #### Sorted list of Keys and Values `Syntax: sorted(<dict>, [reverse = True])`
 - Sorted by keys for sorting and returns a sorted LIST of the dictionary
-
+<br/> Examples: [sorted asc. and desc.](11.sort.py)
 
 #### Calculating `Syntax: max(<dict>)` , `min(<dict>)` and `sum(<dict>)`
 - `<dict>` - is the dictionary whose max, min and sum of keys is to be calculated.
 - Returns a value of Dictionary key's data types.
+- The `sum(<dict>)` - Only work keys which are addition compatible (ie. it won't work keys with string, tuple.
+<br/> Examples [max, min and sum](12.cal-max-min-sum.py)
