@@ -1,4 +1,4 @@
-# kiruthick-python
+# kiruthick-python-11th Class
 
 A small collection of Python examples and exercises organized by concept and package. This repository groups learning material and code for Python basics, string operations, lists, tuples and dictionaries.
 
