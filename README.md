@@ -6,30 +6,16 @@ A small collection of Python examples and exercises organized by concept and pac
 
 This index lists the learning packages and example files in this repository. Each package focuses on a core Python concept and contains small example scripts, exercises, and an explanatory README.
 
-- [python_basic](strings/README.md)/
-  - Description: Core fundamentals — variables, data types, control flow (if/else), loops (for/while), functions, basic I/O.
-  - Example files: hello.py, control_flow.py, functions_example.py
-- [strings](strings/README.md)/
-  - Description: String creation, formatting, methods, slicing, encoding, and common patterns (parsing, templating).
-  - Example files: formatting.py, slicing_and_indexing.py, parse_key_values.py
-- [lists](lists/README.md)/
-  - Description: Building and manipulating lists, comprehensions, nested lists, common algorithms, mutability.
-  - Example files: comprehension_examples.py, list_methods.py, flatten_nested.py
-- [tuples](tuples/README.md)/
-  - Description: Immutable sequences, packing/unpacking, when to use tuples vs lists, using tuples as dict keys.
-  - Example files: pack_unpack.py, tuple_use_cases.py
-- [dictionaries](dictionaries/README.md)/
-  - Description: Mapping types, creation patterns, dictionary methods, nested structures, iteration, common use-cases.
-  - Example files: dict_methods.py, invert_dict.py, merge_dicts.py
-
-## Quick links
-
-- Packages:
-  - python_basic/ - basic Python concepts and examples
-  - strings/ - string operations and examples
-  - lists/ - list operations and examples
-  - tuples/ - tuple usage examples
-  - dictionaries/ - dictionary examples and patterns
+1. [1-basics](1-basics/README.md) — Basics: Core fundamentals — variables, data types, control flow (if/else), loops (for/while), functions, basic I/O.
+2. [2-boolean-gates](2-boolean-gates/README.md) — Boolean Gates: Boolean logic, truth tables, and logical operators.
+3. [3-data-handling](3-data-handling/README.md) — Data Handling: File I/O, CSV parsing, basic data transformations and common utilities.
+4. [4-modules](4-modules/README.md) — Modules: Creating and using modules and packages, standard library highlights.
+5. [5-flow-controls](5-flow-controls/README.md) — Flow Controls: Conditional statements, loops, and exception handling patterns.
+6. [6-string-manipulation](6-string-manipulation/README.md) — String Manipulation: String methods, formatting, slicing, and parsing patterns.
+7. [7-list](7-list/README.md) — Lists: Building and manipulating lists, comprehensions, nested lists, and common algorithms.
+8. [8-tuples](8-tuples/README.md) — Tuples: Immutable sequences, packing/unpacking, and tuple use-cases.
+9. [9-dictionary](9-dictionary/README.md) — Dictionaries: Mapping types, creation patterns, dictionary methods, and nested structures.
+10. [10-ethics](10-ethics/README.md) — Ethics & Fundamentals: Intellectual property, plagiarism, open source philosophy, and societal impacts.
 
 ## Concept flow
 
