@@ -2,11 +2,28 @@
 
 A small collection of Python examples and exercises organized by concept and package. This repository groups learning material and code for Python basics, string operations, lists, tuples and dictionaries.
 
-See the full package index in [index.md](index.md).
+## Package Index
+
+This index lists the learning packages and example files in this repository. Each package focuses on a core Python concept and contains small example scripts, exercises, and an explanatory README.
+
+- python_basic/
+  - Description: Core fundamentals — variables, data types, control flow (if/else), loops (for/while), functions, basic I/O.
+  - Example files: hello.py, control_flow.py, functions_example.py
+- strings/
+  - Description: String creation, formatting, methods, slicing, encoding, and common patterns (parsing, templating).
+  - Example files: formatting.py, slicing_and_indexing.py, parse_key_values.py
+- lists/
+  - Description: Building and manipulating lists, comprehensions, nested lists, common algorithms, mutability.
+  - Example files: comprehension_examples.py, list_methods.py, flatten_nested.py
+- tuples/
+  - Description: Immutable sequences, packing/unpacking, when to use tuples vs lists, using tuples as dict keys.
+  - Example files: pack_unpack.py, tuple_use_cases.py
+- dictionaries/
+  - Description: Mapping types, creation patterns, dictionary methods, nested structures, iteration, common use-cases.
+  - Example files: dict_methods.py, invert_dict.py, merge_dicts.py
 
 ## Quick links
 
-- Index: [index.md](index.md)
 - Packages:
   - python_basic/ - basic Python concepts and examples
   - strings/ - string operations and examples
@@ -40,10 +57,17 @@ sequenceDiagram
 
 ## How to use
 
-1. Open the `index.md` to see the list of packages and example files.
-2. Browse the package folders and run example scripts locally using Python 3.x.
-3. Each package contains a README with focused explanations and sample code.
+1. Browse the package folders and open the README or example scripts.
+2. Run example scripts locally using Python 3.x: `python3 path/to/example.py`.
+3. Each package contains focused explanations and sample code.
+4. Try small edits and rerun to learn by experimentation.
 
 ## Contributing
 
 Contributions welcome — open issues and PRs to add examples, fixes or explanations.
+
+## Next ideas / TODOs
+
+- Add focused READMEs inside each package with short exercises and expected outputs.
+- Add unit tests for examples (pytest) and a CI workflow to run them.
+- Add more intermediate/advanced packages (file handling, modules, OOP, exceptions).
