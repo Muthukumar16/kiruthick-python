@@ -38,4 +38,5 @@ nd3 = dict.fromkeys((1,2,3), (100,200,300))
 print(nd3)
 # O/P: {1: (100, 200, 300), 2: (100, 200, 300), 3: (100, 200, 300)}
 
-# Home: https://github.com/Muthukumar16/kiruthick-python/blob/main/9-dictionary/README.md
+# Home: [9-dictionary README](https://github.com/Muthukumar16/kiruthick-python/blob/main/9-dictionary/README.md)
+# Raw URL: https://github.com/Muthukumar16/kiruthick-python/blob/main/9-dictionary/README.md
