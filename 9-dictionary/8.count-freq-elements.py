@@ -17,7 +17,7 @@ print(test)
 
 import json
 sentence = "This is a super idea This idea will change the idea of learning"
-words = sentence.split() #
+words = sentence.split() # Split sentence and store into words (list)
 print(words)
 # O/P: ['This', 'is', 'a', 'super', 'idea', 'This', 'idea', 'will', 'change', 'the', 'idea', 'of', 'learning']
 dictCountWords = {} # Create dictionary to keep Word <key> : Value <counts>
