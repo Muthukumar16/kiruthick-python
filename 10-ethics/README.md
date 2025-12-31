@@ -108,26 +108,54 @@ Can be freely used (modify) and source code freely available to customer, but do
 - Saves landfill space - Recycling this will help conserve landfill space.
 
 ## Gender Issues with Teaching/Using Computer
+- 60-70 % are boys and rest girls in Computer Science in school level.
 
 #### Under Representation
-Ex: 17% girls represented in `Computer Science`
-- Preconceived Notions.
-- Lack of Interest
-- Lack of motivations
-- Lack of Role models
-- Lack of Encouragement in class
-
+In India College level 17% girls represented in `Computer Science Engineering`
+- Preconceived Notions. - Ex: Boys are better than girls, Girls keep in mind that they have raise family, Teaching is best option for girls, In India parents are playing important roles they are directly/indirectly push pre-conceived notions influencing girls
+- Lack of Interest - Boys get to play more on computer/smartphone and develop more interest in computers than girls
+- Lack of motivations - The `double-burden theory (family role and software carrer)` also discourage girls from technical subjects like Computer Science.
+- Lack of Role models - Everywhere portrayed (TV, movies, etc) that is technical fields like Computer Science are mens fields. All these things psychologically they infer Computer science.
+- Lack of Encouragement in class - Also some teachers pin point on their roles in society such `girls will get married and may not take it up as career` may play hindrance and girls do not develop as much as interest as they can in `Computer Science` Subject 
 
 #### Possible solutions
-
-- 
+- More initiatives and programs that encourage girls to take up Computer science subject
+- The Film and TV censor board should ensure fair representation of female role models in TV, Cinema etc.
+- In Practical rooms - Girls should encourage to work more on Computers. In Lap speak to Lab attendant to get all peripheral devices they want. They should encouraged to celebrate small success in the lab to big success (such as big success removed). This will give more confident
 
 ## Disability Issues while Teaching and using Computers
+- Focus on `inclusive education` and promoting access for students with disabilities
+- Computer science have made today's classroom really diverse and inclusive
+- Other end many issues that have risen and those must to taken care of
+- The Specially abled students, there can be one or more disabilities.
+1) Locomotor disabilities - Polio, Leprosy, Cerebral palsy
+2) Hearing and speech  - Hearing, Speech
+3) Cognitive impairment - Specific learning deficits (Dyslexia, Dyscalculia), Down's syndrome, Autism
+4) Vision impairment - low vision, blindness
 
 #### Unavailability of Teaching materials
+- Different type of disabilities needs different type of aids/materials.
+- Ex: Vision impairment -> Needs different type of screen readers, Hearing impairment -> Need more of visual input than oratory instruction should be available sign language
+- Ex: Locomotor impairment -> Keyboard and Mouse for disabled need visual keyboards 1) Sophisticated virtual keyboard software 2) Joystick 3) Virtual keyboard without mouse
+- Ex: Low Vision -> Braille Keyboards, Monitors and Printers along with screen reader.
 
 #### Lack of Special Needs Teachers
+- Different types of special needs, if special needs teachers are available, disabled students get their needs addressed in right manner.
+- For Hearing impaired students - sign language would able to convey and explain the study materials
+- Teachers who should know Special type of Specialized Hardwares: `Braille Keyboards, Monitors, Printers, Synthetic speech generators, software assistants such as Google assistant etc.`
+- Voice Assistants: `Microsoft's Narrator and Cortana and Ubuntu's Orca and onBoard`
+- `Special version of Linux called BLinux for especially meant for the blind`
+- `Software with accessibility features of various Office Softwares - Microsoft Office and open source offerings such as Apache OpenOffice and LibreOffice`
+- `Specialized editor for visually impaired sutdents for typing program`
 
 #### Lack of Supporting Curriculum
+- Curriculum should be designed while keeping inclusive education
+- Always keep in mind for special needs of the students.
+- Software program should be used for specially needs Ex: Office softwares easily be implemented for all types of students
+- Programming Language with specialized editors are also available ex: Scratch, the block based programming language should not be included
+- Programming contests should be conducted all types of students
 
 #### Possible Solutions:
+- School must work toward availability of required teaching aids/materials, proper budget should be allocated for buying required equipments to promote inclusive education
+- School must employee special needs teachers and also train other teachers
+- School must support `inclusive` curriculum and refrain from any other practice that directly or indirectly puts the disabled students at the disadvantage side. 
