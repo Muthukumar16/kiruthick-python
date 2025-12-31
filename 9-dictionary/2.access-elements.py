@@ -2,7 +2,7 @@
 
 # Syntax <dictionary-name> [<key>]
 # Ex:
-teachers = {"ComputerScience": "Sri Vidya"}
+teachers = {"ComputerScience": "Sri Vidya", "Physics": "Phy Teacher", "Maths": "Preshilla", "English": "English Teacher"}
 print(teachers["ComputerScience"])
 # O/P: Sri Vidya
 
