@@ -34,8 +34,9 @@
 - Key being added must not exist in dictionary and must unique.
 <br/>Examples: [Add Elements](4.add-elements.py)
 
-#### Nesting Dictionaries:
+#### Nesting Dictionaries `Syntax: {<key1>: {<key1.1>: <value1.1>}, <key2>: {<key2.1>: <value2.1>}...}`
 - Storing a dictionary inside another dictionary is called nesting of Dictionary.
+- Access: Ex: `<dict>[key1][key1.1]` O/P: value1.1
 - <b>Use case:</b> Students/Workers name and age, salary and other details
 <br/>Examples: [Nesting](5.nesting-dictionary.py)
 

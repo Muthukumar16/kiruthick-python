@@ -9,6 +9,7 @@ Employee['department'] = 'Software Engineer'
 print(Employee)
 # O/P: {'name': 'Kiryu', 'age': 17, 'department': 'Software Engineer'}
 
+# Modify existing elements by Key
 Employee['name'] = 'Muthukumer'
 Employee['age'] = 50
 print(Employee)

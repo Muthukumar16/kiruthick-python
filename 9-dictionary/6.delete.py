@@ -22,9 +22,27 @@ del EmpNested
 #print(EmpNested)
 # O/P: NameError: name 'EmpNested' is not defined
 
-del Emp1['age']
+#del Emp1['age']
 #print(Emp1)
 # KeyError: 'age'
 
 # Example to delete elements using `pop()`
+Subject = {1: 'Maths', 2: "Computer", 3: "Physics", 4: "Chemistry", 5: "English"}
+print(Subject)
+# O/P: {1: 'Maths', 2: 'Computer', 3: 'Physics', 4: 'Chemistry', 5: 'English'}
+print(Subject.pop(1))
+# O/P: Maths
+print(Subject)
+# O/P: {2: 'Computer', 3: 'Physics', 4: 'Chemistry', 5: 'English'}
 
+#Example to delete elements using `popitem()` - LIFO (Last In First Out)
+print(Subject.popitem())
+# O/P: (5, 'English')
+print(Subject)
+# O/P: {2: 'Computer', 3: 'Physics', 4: 'Chemistry'}
+
+# clear() - remove all the elements and object/dictionary become empty elements
+print(Subject.clear())
+# O/P: None
+print(Subject)
+# O/P: {}
