@@ -9,13 +9,15 @@ List is a type of sequence like strings and tuples but it differs in that string
 
 #### Creating & Accessing Lists
 ###### Creating Lists
-```python
-# Syntax: 
-[]                              # Create Empty List
-[1, 2, 3]                       # Interger List
-['a', 'b', 'c']                 # Charter sequences
-['a', 1, 3, 5, 'zero']          # Mixed data types
+### List Creation Syntax
+| S.No | Syntax              | Description            |
+|------|---------------------|------------------------|
+| 1    | `[]`                | Create an empty list   |
+| 2    | `[1, 2, 3]`         | Integer list           |
+| 3    | `['a', 'b', 'c']`   | Character sequence     |
+| 4    | `['a', 1, 3, 5, 'zero']` | Mixed data types list |
 
+```python
 # Examples
 lstEmpty = []        # Empty list
 lstValues = [0,1,2]  # List equivalent of 0 or ''
