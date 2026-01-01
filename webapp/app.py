@@ -22,6 +22,10 @@ with app.app_context():
     if not os.path.exists("tasks.db"):
         db.create_all()
 
+@app.route("/hello")
+def hello():
+    return "Hello from Flask!"
+
 @app.route("/")
 def index():
     tasks = Task.query.order_by(Task.id.desc()).all()
@@ -104,3 +108,7 @@ def api_delete(task_id):
     db.session.delete(task)
     db.session.commit()
     return {"status": "deleted", "id": task.id}
+
+# your routes here...
+if __name__ == "__main__":
+ app.run(debug=True)
