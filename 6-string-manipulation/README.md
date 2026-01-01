@@ -61,15 +61,28 @@ for ch in name:
 #### String Slices
 
 ##### Python String Functions and Methods
+# Python String Functions and Methods – Examples in One Table
 
-| Category        | Functions / Methods                                                                 |
-|-----------------|--------------------------------------------------------------------------------------|
-| Built-in        | `len()`                                                                              |
-| Case Conversion | `capitalize()`, `lower()`, `upper()`                                                 |
-| Search          | `find()`, `index()`, `count()`                                                       |
-| Validation      | `isalnum()`, `isalpha()`, `isdigit()`, `islower()`, `isupper()`, `isspace()`         |
-| Whitespace      | `strip()`, `lstrip()`, `rstrip()`                                                    |
-| Modification    | `replace()`                                                                          |
-| Splitting/Joining| `split()`, `partition()`, `join()`                                                  |
-
+| Category         | Function / Method | Example Code                                   | Output                        |
+|------------------|-------------------|-----------------------------------------------|-------------------------------|
+| Built-in         | `len()`           | `text = "Kiryu"\nprint(len(text))`            | `5`                           |
+| Case Conversion  | `capitalize()`    | `print("hello".capitalize())`                 | `Hello`                       |
+|                  | `lower()`         | `print("HELLO".lower())`                      | `hello`                       |
+|                  | `upper()`         | `print("hello".upper())`                      | `HELLO`                       |
+| Search           | `find()`          | `print("banana".find("na"))`                  | `2`                           |
+|                  | `index()`         | `print("banana".index("na"))`                 | `2`                           |
+|                  | `count()`         | `print("banana".count("na"))`                 | `2`                           |
+| Validation       | `isalnum()`       | `print("abc123".isalnum())`                   | `True`                        |
+|                  | `isalpha()`       | `print("abc".isalpha())`                      | `True`                        |
+|                  | `isdigit()`       | `print("123".isdigit())`                      | `True`                        |
+|                  | `islower()`       | `print("hello".islower())`                    | `True`                        |
+|                  | `isupper()`       | `print("HELLO".isupper())`                    | `True`                        |
+|                  | `isspace()`       | `print("   ".isspace())`                      | `True`                        |
+| Whitespace       | `strip()`         | `print("  hello  ".strip())`                  | `hello`                       |
+|                  | `lstrip()`        | `print("  hello".lstrip())`                   | `hello`                       |
+|                  | `rstrip()`        | `print("hello   ".rstrip())`                  | `hello`                       |
+| Modification     | `replace()`       | `print("I like apples".replace("apples","bananas"))` | `I like bananas`        |
+| Splitting/Joining| `split()`         | `print("a,b,c".split(","))`                   | `['a', 'b', 'c']`             |
+|                  | `partition()`     | `print("hello world".partition(" "))`         | `('hello', ' ', 'world')`     |
+|                  | `join()`          | `print("-".join(["a","b","c"]))`              | `a-b-c`                       |
 
