@@ -268,6 +268,69 @@ class Job:
             je.step_executions.append(se)
         return je
 
+from concurrent.futures import ProcessPoolExecutor
+from typing import List, Tuple
+
+# Slave step function
+def slave_step(partition: Tuple[int, int], reader_cls, processor, writer_cls, source_path, target_path, header=None):
+    start, end = partition
+    reader = reader_cls(path=source_path, has_header=True)
+    writer = writer_cls(path=target_path, header=header, append=True)
+    reader.open(checkpoint=start)
+    writer.open()
+
+    items = []
+    for i in range(start, end):
+        item = reader.read()
+        if item is None:
+            break
+        processed = processor.process(item)
+        items.append(processed)
+
+    if items:
+        writer.write(items)
+
+    reader.close()
+    writer.close()
+    return len(items)
+
+
+# Master step orchestrator
+class MasterStep:
+    def __init__(self, name, reader_cls, processor, writer_cls, source_path, target_path, chunk_size=100, header=None):
+        self.name = name
+        self.reader_cls = reader_cls
+        self.processor = processor
+        self.writer_cls = writer_cls
+        self.source_path = source_path
+        self.target_path = target_path
+        self.chunk_size = chunk_size
+        self.header = header
+
+    def partition(self, total_records: int) -> List[Tuple[int, int]]:
+        return [(i, min(i + self.chunk_size, total_records)) for i in range(0, total_records, self.chunk_size)]
+
+    def execute(self, total_records: int, max_workers: int = 4):
+        partitions = self.partition(total_records)
+        results = []
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            futures = [
+                executor.submit(
+                    slave_step,
+                    partition,
+                    self.reader_cls,
+                    self.processor,
+                    self.writer_cls,
+                    self.source_path,
+                    self.target_path,
+                    self.header,
+                )
+                for partition in partitions
+            ]
+            for f in futures:
+                results.append(f.result())
+        print(f"Master step '{self.name}' completed. Records processed: {sum(results)}")
+
 
 # -----------------------------
 # Example: CSV cleanse and export
@@ -281,8 +344,11 @@ class CleanseProcessor(ItemProcessor):
         cleaned[0] = str(int(cleaned[0]))  # may raise ValueError -> triggers retry/skip
         return cleaned
 
+import time
 
 def main():
+    # Start timer
+    start_time = time.time()
     # Step 1: Ingest and cleanse input.csv -> output.csv
     reader = CSVItemReader(path="input.csv", has_header=True)
     processor = CleanseProcessor()
@@ -300,9 +366,37 @@ def main():
 
     job = Job(name="customer_import_job", steps=[step1])
     result = job.run()
+    #End timer
+    end_time = time.time()
+    elapsed = end_time - start_time
     print("Job completed.")
     print(result.summary())
+    print(f"Time taken to finish job: {elapsed:.2f} seconds")
 
-
+# Suppose input.csv has less than 1000 rows
 if __name__ == "__main__":
     main()
+
+if __name__ == "__main__":
+    # Start timer
+    start_time = time.time()
+    # Suppose input.csv has 1000 or more rows
+    total_records = 1000
+
+    master = MasterStep(
+        name="partitioned_customer_import",
+        reader_cls=CSVItemReader,
+        processor=CleanseProcessor(),
+        writer_cls=CSVItemWriter,
+        source_path="input.csv",
+        target_path="output.csv",
+        chunk_size=200,
+        header=["id", "name", "email"]
+    )
+
+    master.execute(total_records=total_records, max_workers=5)
+    # End timer
+    end_time = time.time()
+    elapsed = end_time - start_time
+    print("Parallelism Master and Slave Job completed.")
+    print(f"Time taken to finish job: {elapsed:.2f} seconds")
