@@ -44,6 +44,30 @@ flask --app app.py --debug run
 `C:\Users\<user>\AppData\Local\Programs\Python\Python312\python.exe`
 - Or choose Virtualenv Environment → New → based on Python 3.12.
 
+#### ✅ Configure IntelliJ Run/Debug for Flask
+- Open Run/Debug Configurations
+- Go to Run → Edit Configurations…
+- Click + → Python.
+- Set Script Path
+- In Script path, enter:
+
+- Set Working Directory `C:\Muthu\projects\kiruthick-python\webapp\app.py`
+
+- Select Interpreter
+
+- Choose your .venv interpreter:`C:\Muthu\projects\kiruthick-python\.venv\Scripts\python.exe`
+Add Environment Variables
+
+- Click Environment variables → add:
+
+```python
+FLASK_APP=app.py
+FLASK_ENV=development
+FLASK_DEBUG=1
+```
+
+This ensures Flask runs in debug mode and logs show up.
+
 ## ✅ Summary
 - Always use Python 3.12 (64‑bit) for compatibility.
 - Activate venv with PowerShell’s Activate.ps1.
