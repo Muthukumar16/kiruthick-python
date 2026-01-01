@@ -1,82 +1,50 @@
-# Flask CRUD Web Application
+# Flask WebApp with SQLAlchemy
 
-## Overview
-This project is a simple **Flask web application** that demonstrates basic **CRUD operations** (Create, Read, Update, Delete) using **SQLite** as the database and **SQLAlchemy** as the ORM.  
-The app manages a list of tasks with fields: `id`, `title`, and `description`.
-
----
-
-## Features
-- Create new tasks
-- View all tasks
-- Edit existing tasks
-- Delete tasks
-- REST API endpoints for programmatic access
+This project is a simple Flask web application using SQLAlchemy.  
+Below are setup instructions and a consolidated troubleshooting guide — all in one page.
 
 ---
 
-## Project Structure
-├── app.py                 # Main Flask application<br/>
-├── requirements.txt       # Dependencies<br/>
-├── tasks.db               # SQLite database (auto-created)<br/>
-└── templates/             # HTML templates<br/>
+## 🚀 Setup Instructions
 
-├── base.html<br/>
-├── index.html<br/>
-├── create.html<br/>
-└── edit.html<br/>
+### 1. Install Python (Windows, 64‑bit x64)
+- Download Python 3.12 (64‑bit installer) from [python.org](https://www.python.org/downloads/).
+- Run installer:
+  - ✅ Check **Add Python to PATH**
+  - ✅ Choose **Install for all users**
 
-
----
-
-## Setup Instructions
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/flask-crud-app.git
-cd flask-crud-app
-
-# 2. Create a virtual environment
-
+Verify installation:
+```powershell
+python --version
+# Expected: Python 3.12.x
+```
+#### 2. Create Virtual Environment
+```powershell
 python -m venv .venv
+OR
+> & "C:\Users\muthu\AppData\Local\Programs\Python\Python312\python.exe" -m venv .venv
+> .\.venv\Scripts\Activate.ps1
+```
 
-# 2. Activate it:
-# Linux/MacOS
-source .venv/bin/activate
+#### 3. Install Dependencies
+```powershell
+pip install Flask Flask-SQLAlchemy SQLAlchemy
+```
 
-# Windows
-.venv\Scripts\activate
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
+#### 4. Run the App
+```powersheel
 flask --app app.py --debug run
 ```
 
-Visit: http://127.0.0.1:5000
+## 🛠️ Troubleshooting Guide
 
-#### Example Usage
-#### Web Interface
-- Navigate to / to view all tasks
-```bash
-curl http://127.0.0.1:5000/api/tasks
-```
+- IntelliJ Interpreter Setup
+- Go to File → Settings → Project → Python Interpreter
+- Add Interpreter → System Interpreter
+`C:\Users\<user>\AppData\Local\Programs\Python\Python312\python.exe`
+- Or choose Virtualenv Environment → New → based on Python 3.12.
 
-- Use /create to add a new task
-```bash
-curl -X POST http://127.0.0.1:5000/api/tasks \
-  -H "Content-Type: application/json" \
-  -d '{"title":"Learn Flask","description":"CRUD demo"}'
-```
-
-- Use /edit/<id> to update a task
-```bash
-curl -X PATCH http://127.0.0.1:5000/api/tasks/1 \
-  -H "Content-Type: application/json" \
-  -d '{"title":"Learn Flask fast"}'
-```
-
-- Delete tasks directly from the list view
-```bash
-curl -X DELETE http://127.0.0.1:5000/api/tasks/1
-```
+## ✅ Summary
+- Always use Python 3.12 (64‑bit) for compatibility.
+- Activate venv with PowerShell’s Activate.ps1.
+- Point IntelliJ to the correct interpreter.
