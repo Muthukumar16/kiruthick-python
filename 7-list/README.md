@@ -31,9 +31,9 @@ L1 = [1[0][1], [1][2][3][3], [L1][L2], [L1[3]]]
 ```python
 L1 = [[3], [4], [5, 6], [7]]
 # → Total 4 elements: 
-# print(L1[2][0]) 
+print(L1[2][0]) 
 # O/P: 5
-# print(L1[2][1])
+print(L1[2][1])
 # O/P 6
 ```
 
@@ -56,25 +56,26 @@ list = eval(input("Enter list to be added: "))
 ```
 
 #### Accessing Lists (Index)
+list = ['a', 'e', 'i', 'o', 'u']
 
-| Elements       | 'a' | 'e' | 'i' | 'o' | 'u' |
-|----------------|-----|-----|-----|-----|-----|
-| Forward Index  |  0  |  1  |  2  |  3  |  4  |
-| Backward Index | -5 | -4  | -3  | -2  | -1  |
+| Elements       | 'a'  | 'e' | 'i' | 'o' | 'u' |
+|----------------|------|-----|-----|-----|-----|
+| Forward Index  | 0    |  1  |  2  |  3  |  4  |
+| Backward Index | -5   | -4  | -3  | -2  | -1  |
 
 ```python
 ### Accessing List Elements
+lst = [17, True, 'Good']
 
-| Index | Element | Notes / Operations                                      |
-|-------|---------|---------------------------------------------------------|
-| 0     | 17      | Accessed directly                                       |
-| 1     | True    | Used for **Length**                                     |
-| 2     | 'Good'  | Used for **Membership** (`in`, `not in`)                |
-| 3     | —       | Refers to **Memory address of elements**;               |
-|       |         |  supports **Concatenation (+)** and **Replication (*)** |
+| Index     | Element | Notes / Operations                                      |
+|-----------|---------|---------------------------------------------------------|
+| 0  (-3)   | 17      | Accessed directly                                       |
+| 1  (-2)   | True    | Used for **Length**                                     |
+| 2  (-1)   | 'Good'  | Used for **Membership** (`in`, `not in`)                |
 
-# lst[0]  → 17  at 0 lst[-5]  → -47
-# Invalid index: Python will raise → Index Error
+# Refers to **Memory address of elements** supports **Concatenation (+)** and **Replication (*)**
+print(lst[0])       # O/P: 17  at 0 index
+print(lst[-5])      # O/P: Invalid index: Python will raise → Index Error
 # (Ex: lst[3]) or lst[-6] → list index out of range
 ```
 #### Difference between List vs String:
