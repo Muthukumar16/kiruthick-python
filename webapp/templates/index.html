@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <h2>All tasks</h2>
+  {% if tasks %}
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th><th>Title</th><th>Description</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for t in tasks %}
+        <tr>
+          <td>{{ t.id }}</td>
+          <td>{{ t.title }}</td>
+          <td>{{ t.description or '' }}</td>
+          <td>
+            <a href="{{ url_for('edit', task_id=t.id) }}">Edit</a>
+            <form action="{{ url_for('delete', task_id=t.id) }}" method="post" style="display:inline">
+              <button type="submit" onclick="return confirm('Delete this task?')">Delete</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No tasks yet. <a href="{{ url_for('create') }}">Create one</a>.</p>
+  {% endif %}
+</section>
+{% endblock %}
