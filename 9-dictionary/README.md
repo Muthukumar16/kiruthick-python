@@ -114,3 +114,13 @@
 - Returns a value of Dictionary key's data types.
 - The `sum(<dict>)` - Only work keys which are addition compatible (ie. it won't work keys with string, tuple.
 <br/> Examples [max, min and sum](12.cal-max-min-sum.py)
+
+### Key Differences Summary:
+
+| Feature       | String        | List                | Tuple              | Dictionary                                                           |
+|---------------|---------------|---------------------|--------------------|----------------------------------------------------------------------|
+| Mutability    | Immutable     | Mutable             | Immutable          | Mutable                                                              |
+| Syntax        | `''` or `""`  | `[]`                | `()`               | `{key: value}`                                                       |
+| Modification  | Cannot be changed | Can be changed  | Cannot be changed  | Keys/values can be added, updated, removed                           |
+| Use Case      | Text data     | Dynamic collections | Fixed collections  | Key-value mappings; efficient lookups when faster search is required |
+
