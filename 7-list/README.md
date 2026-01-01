@@ -25,7 +25,7 @@ lstValues = [0, 1, 2]  # List containing integers 0, 1, and 2
 # - Square brackets [ ] are used to define lists.
 # - They appear at the beginning and end of the list definition.
 
-# ✅ Correct usage examples:
+# ✅ Access element in the list:
 L1 = [1, 2, 3]         # Simple list
 print(L1[0])           # Access element at index 0 → Output: 1
 print(L1[1])           # Access element at index 1 → Output: 2
