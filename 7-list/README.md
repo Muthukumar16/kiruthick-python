@@ -8,8 +8,7 @@ Key Characteristics:
 List is a type of sequence like strings and tuples but it differs in that strings & tuples are immutable
 
 #### Creating & Accessing Lists
-###### Creating Lists
-### List Creation Syntax
+###### List Creation Syntax
 | S.No | Syntax              | Description            |
 |------|---------------------|------------------------|
 | 1    | `[]`                | Create an empty list   |
