@@ -13,38 +13,22 @@ A tuple is a sequence that is used to store a collection of values of any type. 
 ```python
 # Syntax
 T = ()  # Empty tuple
-T = (values,)  # Single element tuple (comma required!)
+T = (<v1>,<v2>)  # Single element tuple (comma required!)
 ```
+Examples: [Create Tuples](1.create.py)
+
 ### Tuple Creation Syntax
-
-- Create tuple with multiple elements  
-  `T = (element1, element2, element3, ...)`
-
-- Create empty tuple using constructor  
-  `T = tuple()`
-
-- Create single-element tuple (note the comma)  
-  `T = (element,)`  
-  or  
-  `T = element,`
-
-- Create long tuple  
-  `T = (element1, element2, element3, ...)`
-
-- Create nested tuple  
-  `T = (element1, element2, (nested1, nested2))`
-
-- Create tuple from existing sequence  
-  `T = tuple(sequence)`
-
-- Create tuple from list  
-  `T = tuple([list_elements])`
-
-- Create tuple from dictionary (keys only)  
-  `T = tuple({key1: value1, key2: value2, ...})`
-
-- Create tuple from keyboard input  
-  `T = tuple(input("Enter tuple elements: "))`
+| S.No | Method                          | Syntax Example                                      | Notes                                |
+|------|---------------------------------|-----------------------------------------------------|--------------------------------------|
+| 1    | Multiple elements               | `T = (element1, element2, element3, ...)`           | Standard tuple creation              |
+| 2    | Empty tuple (constructor)       | `T = tuple()`                                       | Creates an empty tuple               |
+| 3    | Single-element tuple            | `T = (element,)` or `T = element,`                  | Comma is required for single element |
+| 4    | Long tuple                      | `T = (element1, element2, element3, ...)`           | Can contain many elements            |
+| 5    | Nested tuple                    | `T = (element1, element2, (nested1, nested2))`      | Tuples inside tuples                 |
+| 6    | From existing sequence          | `T = tuple(sequence)`                               | Converts sequence to tuple           |
+| 7    | From list                       | `T = tuple([list_elements])`                        | Converts list to tuple               |
+| 8    | From dictionary (keys only)     | `T = tuple({key1: value1, key2: value2, ...})`      | Extracts keys as tuple               |
+| 9    | From keyboard input             | `T = tuple(input("Enter tuple elements: "))`        | Input converted into tuple of chars  |
 
 ### Tuple Creation Syntax (Additional)
 
