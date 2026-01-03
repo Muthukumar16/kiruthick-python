@@ -155,18 +155,6 @@ print(rsVal)
   - lstcpy = la[:]  
   - print(lstcpy)      `# Output: [11, 12, 13]`
 
-#### `list() and copy()` - Method
-# Python List `copy()` Method Examples
-
-| **Expression**            | **Code Example**                                                                       | **Output**                                         | **Explanation**                                                        |
-|---------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------|------------------------------------------------------------------------|
-| Simple copy               | `a = [1, 2, 3]`<br>`b = a.copy()`<br>`print(b)`                                        | `[1, 2, 3]`                                        | Creates a new list `b` with the same elements as `a`.                  |
-| Modify copy only          | `a = [1, 2, 3]`<br>`b = a.copy()`<br>`b[0] = 99`<br>`print(a)`<br>`print(b)`           | `a → [1, 2, 3]`<br>`b → [99, 2, 3]`                | Changing `b` does not affect `a`.                                      |
-| Nested list (shallow)     | `a = [[1, 2], [3, 4]]`<br>`b = a.copy()`<br>`b[0][0] = 99`<br>`print(a)`<br>`print(b)` | `a → [[99, 2], [3, 4]]`<br>`b → [[99, 2], [3, 4]]` | Shallow copy: inner lists are still shared.                            |
-| Compare with assignment   | `a = [1, 2, 3]`<br>`b = a`<br>`b[0] = 99`<br>`print(a)`                                | `[99, 2, 3]`                                       | Assignment creates an alias, not a copy — both refer to the same list. |
-| Alternative copy (slice)  | `a = [10, 20, 30]`<br>`b = a[:]`<br>`print(b)`                                         | `[10, 20, 30]`                                     | Slicing also creates a shallow copy of the list.                       |
-| Alternative copy (list()) | `a = [5, 6, 7]`<br>`b = list(a)`<br>`print(b)`                                         | `[5, 6, 7]`                                        | Using `list()` constructor makes a shallow copy.                       |
-
 #### `copy()` - Method
 ```python
 # True independent copy of list. copy() method → Creating the true copy of a list.
@@ -177,6 +165,18 @@ lb  # Output: [11, 12, 13]
 lb[0] += 10  # VALID It : [21, 12, 13]
 la  # Output: [11, 12, 13]
 ```
+
+# Python  `copy()`, `slice` and `list()` Examples
+
+| **Expression**            | **Code Example**                                                                       | **Output**                                         | **Explanation**                                                        |
+|---------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------|------------------------------------------------------------------------|
+| Simple copy               | `a = [1, 2, 3]`<br>`b = a.copy()`<br>`print(b)`                                        | `[1, 2, 3]`                                        | Creates a new list `b` with the same elements as `a`.                  |
+| Modify copy only          | `a = [1, 2, 3]`<br>`b = a.copy()`<br>`b[0] = 99`<br>`print(a)`<br>`print(b)`           | `a → [1, 2, 3]`<br>`b → [99, 2, 3]`                | Changing `b` does not affect `a`.                                      |
+| Nested list (shallow)     | `a = [[1, 2], [3, 4]]`<br>`b = a.copy()`<br>`b[0][0] = 99`<br>`print(a)`<br>`print(b)` | `a → [[99, 2], [3, 4]]`<br>`b → [[99, 2], [3, 4]]` | Shallow copy: inner lists are still shared.                            |
+| Compare with assignment   | `a = [1, 2, 3]`<br>`b = a`<br>`b[0] = 99`<br>`print(a)`                                | `[99, 2, 3]`                                       | Assignment creates an alias, not a copy — both refer to the same list. |
+| Alternative copy (slice)  | `a = [10, 20, 30]`<br>`b = a[:]`<br>`print(b)`                                         | `[10, 20, 30]`                                     | Slicing also creates a shallow copy of the list.                       |
+| Alternative copy (list()) | `a = [5, 6, 7]`<br>`b = list(a)`<br>`print(b)`                                         | `[5, 6, 7]`                                        | Using `list()` constructor makes a shallow copy.                       |
+
 
 #### List Operations
 
