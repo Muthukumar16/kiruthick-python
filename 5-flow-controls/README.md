@@ -11,8 +11,8 @@
 
 1. Empty (Null) Statements: <br/>`pass` - statement, which does noting 
 2. Simple Statement (Single statement): <br/>Single executable statement `name = input("Enter your name)`
-3. Compound Statement:
-4. Group of statements <br/>`<compound statement Header>`<br/> &nbsp;&nbsp;&nbsp;&nbsp`<indented body containing multiple simple and/or compound statements>`
+3. Compound Statement:<br/>
+`<compound statement header>:`<br/> &nbsp;&nbsp;&nbsp;&nbsp;`<indented body -> multiple simple and/or compound statements>`
 
 ### Statement Flow Control
 #### Sequence
