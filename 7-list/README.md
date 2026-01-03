@@ -124,18 +124,12 @@ Sorts an item, default increasing.
 # Example: List.sort(reverse=True)
 
 val = [17, 24, 15, 30]
-sval = val.sort()
-print(sval)
-# Output: [15, 17, 24, 30]
-rsVal = val.sort(val, reverse=True)
-print(rsVal)
-# Output: [30, 24, 17, 15]
+print(val.sort()) # None
+print(val)   # Output: [15, 17, 24, 30]
+val.sort(reverse=True)
+print(val)   # Output: [30, 24, 17, 15]
 
 # ⚠️ No return value
-# → It creates new list with sorted version
-# → It takes any iterable sequence type to tuples
-# → It returns newly created sorted list
-# → It doesn't change passed sequence
 ```
 
 #### sorted()
@@ -146,8 +140,13 @@ print(rsVal)
 val = [17,24,15,30]
 sval = sorted(val) 
 print(sval)                       # O/P: [15, 17, 24, 30]
-rval = sorted(val, reverse=True)
-print(sval)                       # O/P: [30, 24, 17, 15]
+print(sorted(val, reverse=True))  # O/P: [30, 24, 17, 15]
+
+# ⚠️ It return a new list
+# → It creates new list with sorted version
+# → It takes any iterable sequence type to list/tuples/dictionary
+# → It returns newly created sorted list/tuples/dictionary
+# → It doesn't change passed sequence
 ```
 
 # Difference Between `sort()` and `sorted()` in Python Lists
