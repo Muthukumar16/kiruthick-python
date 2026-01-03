@@ -71,12 +71,12 @@ list = ['a', 'e', 'i', 'o', 'u']
 ### Accessing List Elements
 lst = [17, True, 'Good']
 
-| Index     | Element | Notes / Operations                                      |
-|-----------|---------|---------------------------------------------------------|
-| 0  (-3)   | 17      | Accessed directly                                       |
-| 1  (-2)   | True    | Used for **Length**                                     |
-| 2  (-1)   | 'Good'  | Used for **Membership** (`in`, `not in`)                |
-
+|-----------|----------------------|-----------------------------------|
+| Index     | Element              | Notes / Operations                |
+|-----------|----------------------|-----------------------------------|
+| 0  (-3)   | lst[0] or lst[-3]    | Accessed directly                 |
+|-----------|---------------|------------------------------------------|
+  
 # Refers to **Memory address of elements** supports **Concatenation (+)** and **Replication (*)**
 print(lst[0])       # O/P: 17  at 0 index
 print(lst[-5])      # O/P: Invalid index: Python will raise → Index Error
@@ -139,9 +139,29 @@ print(rsVal)
 ```
 
 #### sorted()
-- Takes the name of list as an argument and return new.
+- Takes the name of list as an argument and return new list.
 # Syntax: 
 # sorted(<iterable-seq>, [reverse=False])
+```python
+val = [17,24,15,30]
+sval = sorted(val) 
+print(sval)                       # O/P: [15, 17, 24, 30]
+rval = sorted(val, reverse=True)
+print(sval)                       # O/P: [30, 24, 17, 15]
+```
+
+# Difference Between `sort()` and `sorted()` in Python Lists
+
+| Feature                | `list.sort()`                                         | `sorted(list)`                                                                       |
+|-------------------------|------------------------------------------------------|--------------------------------------------------------------------------------------|
+| **Type**               | Method of list object                                 | Built-in function                                                                    |
+| **Return Value**       | Returns `None` (modifies list in place)               | Returns a **new sorted list**                                                        |
+| **Original List**      | Gets changed (in-place sorting)                       | Remains unchanged                                                                    |
+| **Usage**              | `numbers.sort()`                                      | `sorted(numbers)`                                                                    |
+| **Flexibility**        | Works only on lists                                   | Works on any iterable (list, tuple, set, dict keys, etc.)                            |
+| **Performance**        | Slightly faster (no new list created)                 | Slightly slower (creates a new list)                                                 |
+| **Example**            | `a = [3,1,2]`<br>`a.sort()`<br>`print(a)` → `[1,2,3]` | `a = [3,1,2]`<br>`b = sorted(a)`<br>`print(a)` → `[3,1,2]`<br>`print(b)` → `[1,2,3]` |
+
 
 #### 3 Ways to copy of a list:
 - Using assignment operator to Copy of a List
