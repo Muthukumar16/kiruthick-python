@@ -62,9 +62,9 @@ list = eval(input("Enter list to be added: "))
 #### Accessing Lists (Index)
 list = ['a', 'e', 'i', 'o', 'u']
 
-| Elements       | 'a'  | 'e' | 'i' | 'o' | 'u' |
-|----------------|------|-----|-----|-----|-----|
 | Forward Index  | 0    |  1  |  2  |  3  |  4  |
+|----------------|------|-----|-----|-----|-----|
+| Elements       | 'a'  | 'e' | 'i' | 'o' | 'u' |
 | Backward Index | -5   | -4  | -3  | -2  | -1  |
 
 ```python
