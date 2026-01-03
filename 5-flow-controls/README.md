@@ -12,7 +12,7 @@
 1. Empty Statements: <br/>`pass` - statement, which does noting 
 2. Simple Statement (Single statement): <br/>Single executable statement `name = input("Enter your name)`
 3. Compound Statement:
-4. Group of statements <br/>`<compound statement Header>`<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<indented body containing multiple simple and/or compound statements>`
+4. Group of statements <br/>`<compound statement Header>`<br/> &nbsp;&nbsp;&nbsp;&nbsp`<indented body containing multiple simple and/or compound statements>`
 
 
 
