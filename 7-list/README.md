@@ -103,19 +103,19 @@ for a in L1:
 
 #### List Built-in Functions & Methods
 
-| S.No | Function | Syntax                        | Description                                      |
-|------|----------|-------------------------------|--------------------------------------------------|
-| 1    | len()    | `len(<list>)`                 | Returns the length of the list                   |
-| 2    | list()   | `list(<sequence>)`            | Converts a sequence (string, tuple, dict keys) into a list |
-| 3    | index()  | `<list>.index(<item>)`        | Returns the index of the specified item          |
-| 4    | append() | `<list>.append(<item>)`       | Adds an item to the end of the list              |
-| 5    | extend() | `<list>.extend(<list>)`       | Adds multiple elements from another list         |
+| S.No | Function | Syntax                           | Description                                      |
+|------|----------|----------------------------------|--------------------------------------------------|
+| 1    | len()    | `len(<list>)`                    | Returns the length of the list                   |
+| 2    | list()   | `list(<sequence>)`               | Converts a sequence (string, tuple, dict keys) into a list |
+| 3    | index()  | `<list>.index(<item>)`           | Returns the index of the specified item          |
+| 4    | append() | `<list>.append(<item>)`          | Adds an item to the end of the list              |
+| 5    | extend() | `<list>.extend(<list>)`          | Adds multiple elements from another list         |
 | 6    | insert() | `<list>.insert(<index>, <item>)` | Inserts an item at the given position          |
-| 7    | pop()    | `<list>.pop(<index>)`         | Removes and returns the item at the given index  |
-| 8    | remove() | `<list>.remove(<value>)`      | Removes the first occurrence of the specified value |
-| 9    | clear()  | `<list>.clear()`              | Removes all items from the list                  |
-| 10   | count()  | `<list>.count(<item>)`        | Returns the count of the specified item          |
-| 11   | reverse()| `<list>.reverse()`            | Reverses the items of the list                   |
+| 7    | pop()    | `<list>.pop(<index>)`            | Removes and returns the item at the given index  |
+| 8    | remove() | `<list>.remove(<value>)`         | Removes the first occurrence of the specified value |
+| 9    | clear()  | `<list>.clear()`                 | Removes all items from the list                  |
+| 10   | count()  | `<list>.count(<item>)`           | Returns the count of the specified item          |
+| 11   | reverse()| `<list>.reverse()`               | Reverses the items of the list                   |
 
 #### sort()
 Sorts an item, default increasing.
