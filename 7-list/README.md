@@ -140,10 +140,23 @@ print(rsVal)
 
 #### sorted()
 - Takes the name of list as an argument and return new.
-```python
 # Syntax: 
 # sorted(<iterable-seq>, [reverse=False])
-list() Method
+
+#### 3 Ways to create true copy of a list:
+- list()
+- copy()
+- Storing all elements of list using list slice with copy
+
+
+##### Syntax: lstcopy = List[:] - Assignment operator
+- Ex: 
+  - la = [11, 12, 13]  
+  - lstcpy = la[:]  
+  - print(lstcpy)      `# Output: [11, 12, 13]`
+
+#### `list()` - Method
+```python
 # True independent copy of list. copy() method → Creating the true copy of a list.
 la = [11, 12, 13]
 lb = la.copy()
@@ -151,16 +164,6 @@ la  # Output: [11, 12, 13]
 lb  # Output: [11, 12, 13]
 lb[0] += 10  # VALID It : [21, 12, 13]
 la  # Output: [11, 12, 13]
-```
-
-#### 3 Ways to create true copy of a list:
-- list()
-- copy()
-- Storing all elements of list using list slice with copy
-
-```python
-# Syntax: lstcopy = List[:]
-#   Ex: lstcpy = la[:]  # Output: [11, 12, 13]
 ```
 
 #### List Operations
