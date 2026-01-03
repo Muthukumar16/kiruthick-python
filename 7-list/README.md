@@ -31,7 +31,7 @@ print(L1[0])           # Access element at index 0 → Output: 1
 print(L1[1])           # Access element at index 1 → Output: 2
 ```
 
-# Nested List
+#### Nested List
 ```python
 lstNested = [[3], [4], [5, 6], [7]]
 # → Total 4 elements: 
@@ -41,7 +41,7 @@ print(lstNested[2][1])
 # O/P 6
 ```
 
-# Input from keyboard
+#### Input from keyboard
 ```python
 lstInput = list(input("Enter list elements: "))
 # Enter list elements: 23456789
@@ -134,8 +134,7 @@ print(val)   # Output: [30, 24, 17, 15]
 
 #### sorted()
 - Takes the name of list as an argument and return new list.
-# Syntax: 
-# sorted(<iterable-seq>, [reverse=False])
+###### Syntax: `sorted(<iterable-seq>, [reverse=False])`
 ```python
 val = [17,24,15,30]
 sval = sorted(val) 
@@ -149,7 +148,7 @@ print(sorted(val, reverse=True))  # O/P: [30, 24, 17, 15]
 # → It doesn't change passed sequence
 ```
 
-# Difference Between `sort()` and `sorted()` in Python Lists
+##### Difference Between `sort()` and `sorted()` in Python Lists
 
 | Feature                | `list.sort()`                                         | `sorted(list)`                                                                       |
 |-------------------------|------------------------------------------------------|--------------------------------------------------------------------------------------|
@@ -206,7 +205,7 @@ lstcpy = la[:]
 print(lstcpy)      # Output: [11, 12, 13]`
 ```
 
-# Python  `copy()`, `slice` and `list()` Examples
+#### Python  `copy()`, `slice` and `list()` Examples
 
 | **Expression**            | **Code Example**                                                                       | **Output**                                         | **Explanation**                                                        |
 |---------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------|------------------------------------------------------------------------|
