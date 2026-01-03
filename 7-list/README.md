@@ -143,17 +143,29 @@ print(rsVal)
 # Syntax: 
 # sorted(<iterable-seq>, [reverse=False])
 
-#### 3 Ways to create true copy of a list:
-- Storing all elements of list using list slice with copy
+#### 3 Ways to copy of a list:
+- Using assignment operator to Copy of a List
 - list()
 - copy()
+- Storing all elements of list using list slice with copy
 
-##### Storing all elements of list using list `slice` with copy
-`Syntax: lstcopy = List[:] - Assignment operator`
-- Ex: 
-  - la = [11, 12, 13]  
-  - lstcpy = la[:]  
-  - print(lstcpy)      `# Output: [11, 12, 13]`
+#### Using `assignment operator` and `list() method` to Copy of a List
+```python
+a = [1, 2, 3]
+
+# Use assignment operation
+b = a  # (same ref)  [1][2][3] → lst1
+       #             ↑↑↑  lst2
+# Create an alias
+
+a[1] = 5
+a  # Op: [1, 5, 3]
+b  # Op: [1, 5, 3]
+
+b = list(a)
+a  # [1][2][3] → lst 1
+b  # [1][2][3] → lst 2
+```
 
 #### `copy()` - Method
 ```python
@@ -164,6 +176,15 @@ la  # Output: [11, 12, 13]
 lb  # Output: [11, 12, 13]
 lb[0] += 10  # VALID It : [21, 12, 13]
 la  # Output: [11, 12, 13]
+```
+
+##### Storing all elements of list using list `slice` with copy
+```python
+# Syntax: lstcopy = List[:] - Assignment operator`
+# Ex: 
+la = [11, 12, 13]  
+lstcpy = la[:]  
+print(lstcpy)      # Output: [11, 12, 13]`
 ```
 
 # Python  `copy()`, `slice` and `list()` Examples
@@ -258,24 +279,6 @@ print(lst[10:20])  #Op: [5] → (Empty)  # ⚠️ Both limit exceed
     lstStep[::3]    # → (entire lst here - every 3rd element)
     lstStep[::‐1]
     # O/P: [34, 32, 30, 24, 22, 20, 14, 12, 10]
-```
-
-#### Making True Copy of a List
-```python
-a = [1, 2, 3]
-
-# Use assignment operation
-b = a  # (same ref)  [1][2][3] → lst1
-       #             ↑↑↑  lst2
-# Create an alias
-
-a[1] = 5
-a  # Op: [1, 5, 3]
-b  # Op: [1, 5, 3]
-
-b = list(a)
-a  # [1][2][3] → lst 1
-b  # [1][2][3] → lst 2
 ```
 
 #### Accessing Through Indexes in Loop
