@@ -1,4 +1,8 @@
-# Fundamentals
+# Society, Law and Ethics
+
+- We are in `information age` Ex: Online payment, crate/develop our own art/information
+- Its raised specific issues and problems related to society, ethics and law.
+- This chapter covers - IPR (Intellectual Property Rights,  Plagiarsum, cybercrime, cyberlaw, E-waste management and Promoting `Inclusive educations (Gender and Disability issues)`
 
 ## Ethical Issues
 
