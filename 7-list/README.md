@@ -1,7 +1,8 @@
 # LISTS
 #### What is a List?
 Lists are containers (mutable/modifiable) that are used to store a list of values of any type. Python lists are MUTABLE.
-Key Characteristics:
+
+#### Key Characteristics:
 
 - You can change the elements of a list in place
 - It will create a fresh list when you make changes to any element
