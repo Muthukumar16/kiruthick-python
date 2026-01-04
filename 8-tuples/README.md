@@ -21,18 +21,18 @@ Examples: [Create Tuples](1.create.py)
 ### Tuple Creation Syntax
 | S.No | Method                    | Syntax Example                                      | Notes                                |
 |------|---------------------------|-----------------------------------------------------|--------------------------------------|
-| 1    | Empty tuple (constructor) | `T = tuple()`                                       | Creates an empty tuple               |
-| 3    | Single-element tuple      | `T = (element,)` or `T = element,`                  | Comma is required for single element |
+| 1    | Single-element tuple      | `T = (element,)` or `T = element,`                  | Comma is required for single element |
 | 2    | Long/Multiple elements    | `T = (element1, element2, element3, ...)`           | Standard tuple creation              |
-| 4    | Nested tuple              | `T = (element1, element2, (nested1, nested2))`      | Tuples inside tuples                 |
+| 3    | Nested tuple              | `T = (element1, element2, (nested1, nested2))`      | Tuples inside tuples                 |
 
-### Create from exising collections
-| S.No | Method                          | Syntax Example                                      | Notes                                |
-|------|---------------------------------|-----------------------------------------------------|--------------------------------------|
-| 1    | From existing sequence          | `T = tuple(sequence)`                               | Converts sequence to tuple           |
-| 2    | From list                       | `T = tuple([list_elements])`                        | Converts list to tuple               |
-| 3    | From dictionary (keys only)     | `T = tuple({key1: value1, key2: value2, ...})`      | Extracts keys as tuple               |
-| 4    | From keyboard input             | `T = tuple(input("Enter tuple elements: "))`        | Input converted into tuple of chars  |
+### Create from exising collections using constructors
+| S.No | Method                      | Syntax Example                                      | Notes                                |
+|------|-----------------------------|-----------------------------------------------------|--------------------------------------|
+| 1    | Empty tuple (constructor)   | `T = tuple()`                                       | Creates an empty tuple               |
+| 2    | From existing sequence      | `T = tuple(sequence)`                               | Converts sequence to tuple           |
+| 3    | From list                   | `T = tuple([list_elements])`                        | Converts list to tuple               |
+| 4    | From dictionary (keys only) | `T = tuple({key1: value1, key2: value2, ...})`      | Extracts keys as tuple               |
+| 5    | From keyboard input         | `T = tuple(input("Enter tuple elements: "))`        | Input converted into tuple of chars  |
 
 ### `eval(input())` (Additional)
 
