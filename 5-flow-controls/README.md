@@ -16,8 +16,13 @@
 
 ### Statement Flow Control
 #### Sequence
+- The statements are being executed sequentially.
+- When the final statement of program is executed, the program is done.
 
 #### Selection
+- Execution of statement depending upon a condition-test. 
+- If a condition evaluates to `True`, a course of action is followed.
+- Otherwise, another course of action if followed.
 
 #### Repetition Iteration (Looping)
 
