@@ -33,14 +33,23 @@ print(L1[1])           # Access element at index 1 → Output: 2
 ```
 
 #### Nested List
+- A list that contains one or more lists as its elements is called a nested list.
 ```python
 lstNested = [[3], [4], [5, 6], [7]]
 # → Total 4 elements: 
-print(lstNested[2][0]) 
-# O/P: 5
-print(lstNested[2][1])
-# O/P 6
+print(lstNested[2][0])  # O/P: 5
+print(lstNested[2][1])  # O/P: 6
+LA = [22, 11]
+LB = [33, 11]
+LC = [11, LA, LB]
+print (LC)              # O/P: [11, [22, 11], [33, 11]]
+LX = [11, LA, LB, LC]
+print (LX)              # [11, [22, 11], [33, 11], [11, [22, 11], [33, 11]]]
 ```
+
+#### `eval()` - Function:
+- It used to evaluate and return the result of an expression given as string
+- Ex: `eval(5=3)` - O/P: 8
 
 #### Input from keyboard
 ```python
@@ -55,10 +64,13 @@ print(lstStr)
 - Note: The data type of all characters entered is (String) even though we entered digits.
 To enter a list of integers using keyboard:
 ```python
-list = eval(input("Enter list to be added: "))
-# >> list you entered: [67, 78, 46, 23]
-# >> This sometimes doesn't work in Python Shell
+lst = eval(input("Enter list to be added: "))
+# I/P: Enter list to be added: [67, 78, 46, 23]
+# >>> list you entered: [67, 78, 46, 23]
+print(lst, type(lst))
+# >>> [67, 78, 46, 23] <class 'list'>
 ```
+Note: This sometimes doesn't work in Python Shell
 
 #### Accessing Lists (Index)
 list = ['a', 'e', 'i', 'o', 'u']
